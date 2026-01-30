@@ -5,7 +5,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 
-from chatBot import ask_rag
+from Home.chatBot import ask_rag
 
 app = FastAPI()
 
