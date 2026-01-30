@@ -122,12 +122,12 @@ retriever = vectorstore.as_retriever(
 )
 
 load_dotenv()
-HF_TOKEN = os.getenv("hf_token")
+hf_token = os.getenv("hf_token")
 # Create base LLM
 base_llm = HuggingFaceEndpoint(
     repo_id="mistralai/Mistral-7B-Instruct-v0.2",
     # huggingfacehub_api_token=,
-    huggingfacehub_api_token="HF_TOKEN",
+    huggingfacehub_api_token=hf_token,
     temperature=0.3,
     max_new_tokens=180
 )
