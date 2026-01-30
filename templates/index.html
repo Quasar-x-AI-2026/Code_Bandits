@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+
+</head>
+<body>
+<div class ="collegelogo">
+    <img src="/static/clgLogo.png" class="logo1" >
+
+</div>
+
+<div class="logoes">
+
+    <img src="/static/ai-impact-logo.png" alt="AI Impact" class="AI">
+    <img src="/static/iic.png" alt="HG" class="HG">
+    
+</div>
+
+<div class="chat-wrapper">
+
+    <!-- Vertical Urgency Meter (LEFT) -->
+    <div class="urgency-vertical">
+        <span id="urgency-label">Low</span>
+        <div class="urgency-track">
+            <div id="urgency-fill"></div>
+        </div>
+    </div>
+
+    <!-- Chat Container (RIGHT) -->
+    <div class="chat-container">
+
+        <div class="header">
+            <img src="/static/quaser.png" alt="" class="logo">
+            <h2>JeevanAI</h2>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="input-row">
+            <input id="user-input" type="text" placeholder="Ask a question..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>Developed by: <strong>Code Bandits</strong></p>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

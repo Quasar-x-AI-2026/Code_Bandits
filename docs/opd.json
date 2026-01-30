@@ -1,0 +1,78 @@
+{
+  "hospital": "Rajendra Institute of Medical Sciences, Ranchi",
+  "type": "OPD Doctor Duty Roster",
+  "departments": {
+    "Medicine": {
+      "Monday": "Dr. Bindey Kumar",
+      "Tuesday": "Dr. Sanjay Kr. Singh",
+      "Wednesday": "Dr. Ajit Dungdung",
+      "Thursday": "Dr. R.T. Guria",
+      "Friday": "Dr. M. K. Prasad",
+      "Saturday": "Dr. Abhay Kumar"
+    },
+    "Surgery": {
+      "Monday": "Dr. D. K. Sinha",
+      "Tuesday": "Dr. Pankaj Bodra",
+      "Wednesday": "Dr. Mrityunjay Mundu",
+      "Thursday": "Dr. Sandip Kumar",
+      "Friday": "Dr. Farrukh Hassan",
+      "Saturday": "Dr. Farrukh Hassan"
+    },
+    "Orthopaedics": {
+      "Monday": "Dr. Vinay Prabhat",
+      "Tuesday": "Dr. G.K. Gupta",
+      "Wednesday": "Dr. G.K. Gupta",
+      "Thursday": "Dr. Vinay Prabhat",
+      "Friday": "Dr. G.K. Gupta",
+      "Saturday": "Dr. G.K. Gupta"
+    },
+    "Obstetrics & Gynaecology": {
+      "Monday": "Dr. Shashi Bala Singh",
+      "Tuesday": "Dr. Archana Kumari",
+      "Wednesday": "Dr. Atima Bharti",
+      "Thursday": "Dr. Meena Mehta",
+      "Friday": "Dr. Kiran Trivedi",
+      "Saturday": "Dr. Neelam Nalini"
+    },
+    "Paediatrics": {
+      "Monday": "Dr. Rajeeva Mishra",
+      "Tuesday": "Dr. Upendra Prasad Sahu",
+      "Wednesday": "Dr. P.K. Chaudhuri",
+      "Thursday": "Dr. Rajeeva Mishra",
+      "Friday": "Dr. Upendra Prasad Sahu",
+      "Saturday": "Dr. Sunanda Jha"
+    },
+    "Neonatology": {
+      "Monday": null,
+      "Tuesday": null,
+      "Wednesday": "Dr. Rajeeva Mishra / Dr. Kiran Shankar Das",
+      "Thursday": "Dr. Preeta Naaz",
+      "Friday": null,
+      "Saturday": null
+    },
+    "Psychiatry": {
+      "Monday": "Dr. Ajay Kumar Bakhla",
+      "Tuesday": "Dr. Ajay Kumar Bakhla",
+      "Wednesday": "Dr. Ajay Kumar Bakhla",
+      "Thursday": "Dr. Ajay Kumar Bakhla",
+      "Friday": "Dr. Ajay Kumar Bakhla",
+      "Saturday": "Dr. Ajay Kumar Bakhla"
+    },
+    "Neurology": {
+      "Monday": "Dr. Surendra Kumar",
+      "Tuesday": "Dr. Rupesh Prasad",
+      "Wednesday": "Dr. Surendra Kumar",
+      "Thursday": "Dr. Rupesh Prasad",
+      "Friday": "Dr. Surendra Kumar",
+      "Saturday": "Dr. Rupesh Prasad"
+    },
+    "Cardiology": {
+      "Monday": "Dr. Prakash Kumar",
+      "Tuesday": "Dr. Hemant Narayan Ray",
+      "Wednesday": "Dr. P.K. Shrivastava",
+      "Thursday": "Dr. Prashant Kumar",
+      "Friday": "Dr. Mrinal Kunj",
+      "Saturday": null
+    }
+  }
+}
