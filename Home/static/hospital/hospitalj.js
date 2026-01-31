@@ -31,7 +31,7 @@ async function sendMessage() {
     userInput.value = "";
 
     try {
-        const response = await fetch("/chat", {
+        const response = await fetch("/hospital", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -5,9 +5,12 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from chatBot import ask_rag
+from hospital.apph import app as hospital_app; 
 
 
 app = FastAPI()
+
+app.mount("/hospital",hospital_app)
 
 # Serve static files
 app.mount("/static", StaticFiles(directory="static"), name="static")

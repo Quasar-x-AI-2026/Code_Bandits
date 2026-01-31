@@ -27,7 +27,7 @@ class ChatRequest(BaseModel):
     session_id: str
     message: str
 
-@app.post("/chat")
+@app.post("/hospital")
 def chat(req: ChatRequest):
     if req.session_id not in chat_sessions:
         chat_sessions[req.session_id] = []
@@ -39,13 +39,9 @@ def chat(req: ChatRequest):
             chat_sessions[req.session_id] = chat_sessions[req.session_id][-MAX_HISTORY:]
         
         return{
-            "answer":result["answer"],
-            "urgency_level": result["urgency_level"],
-            "urgency_label": result["urgency_label"]
+            "answer":result["answer"]
         }
     except Exception as e:
         return {
             "answer": "System temporarily unavailable",
-            "urgency_level": 0,
-            "urgency_label": "Low"
         }
