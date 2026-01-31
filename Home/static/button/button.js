@@ -1,8 +1,8 @@
 
 const pageMap = {
-  "hill view hospital": "hospital/hospital.html",
-  "santevita hospital": "santevita.html",
-  "rajendra institute of medical sciences(rims)": "rims.html"
+  "hill view hospital": "/static/hospital/hospital.html",
+  "santevita hospital": "/static/hospital/hospital.html",
+  "rajendra institute of medical sciences(rims)": "/static/hospital/hospital.html"
 };
 
 // Given data
@@ -33,8 +33,12 @@ function filterData() {
     const li = document.createElement("li");
     li.textContent = item;
     li.onclick = () => {
-      window.location.href = pageMap[item.toLowerCase()];
+      const key = item.toLowerCase();
+      if (pageMap[key]) {
+        window.location.href = pageMap[key];
+      }
     };
+
 
     dropdown.appendChild(li);
   });
@@ -46,6 +50,31 @@ function goToPage() {
     .value
     .trim()
     .toLowerCase();
+
+  if (pageMap[query]) {
+    window.location.href = pageMap[query];
+  } else {
+    alert("No page found for this search");
+  }
+}
+
+function handleSearch() {
+  const box = document.getElementById("searchBox");
+  const input = document.getElementById("searchInput");
+
+  // If search box is hidden → just open it
+  if (box.style.display !== "block") {
+    box.style.display = "block";
+    input.focus();
+    return;
+  }
+
+  const query = input.value.trim().toLowerCase();
+
+  if (!query) {
+    alert("Please type or select a name");
+    return;
+  }
 
   if (pageMap[query]) {
     window.location.href = pageMap[query];
