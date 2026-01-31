@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <title>Search with Dropdown</title>
   <link rel="stylesheet" href="button.css">
-<!-- Search Button -->
-  <button onclick="toggleSearch()">Search</button>
-
-  <!-- Search Box -->
-  <div id="searchBox" class="search-container">
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Type to search..."
-      onkeyup="filterData()"
-    />
-    <ul id="dropdown"></ul>
-  </div>
 </head>
 
-<script src="button.js"></script>
 <body>
+
+<button onclick="goToPage()">Search</button>
+
+<div id="searchBox" class="search-container">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Type to search..."
+    onkeyup="filterData()"
+  />
+  <ul id="dropdown"></ul>
+</div>
+
+<script src="button.js"></script>
+</body>

@@ -1,35 +1,55 @@
 
-    // Given data
-    const data = [
-        "Hill View Hospital",
-        "Santevita Hospital",
-        "Rajendra Institute of Medical Sciences(RIMS)"
-    ];
+const pageMap = {
+  "hill view hospital": "hospital/hospital.html",
+  "santevita hospital": "santevita.html",
+  "rajendra institute of medical sciences(rims)": "rims.html"
+};
 
-    function toggleSearch() {
-      const box = document.getElementById("searchBox");
-      box.style.display = box.style.display === "block" ? "none" : "block";
-      document.getElementById("searchInput").focus();
-    }
+// Given data
+const data = [
+  "Hill View Hospital",
+  "Santevita Hospital",
+  "Rajendra Institute of Medical Sciences(RIMS)"
+];
 
-    function filterData() {
-      const input = document.getElementById("searchInput").value.toLowerCase();
-      const dropdown = document.getElementById("dropdown");
-      dropdown.innerHTML = "";
+function toggleSearch() {
+  const box = document.getElementById("searchBox");
+  box.style.display = box.style.display === "block" ? "none" : "block";
+  document.getElementById("searchInput").focus();
+}
 
-      if (input === "") return;
+function filterData() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const dropdown = document.getElementById("dropdown");
+  dropdown.innerHTML = "";
 
-      const filtered = data.filter(item =>
-        item.toLowerCase().includes(input)
-      );
+  if (input === "") return;
 
-      filtered.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        li.onclick = () => {
-          document.getElementById("searchInput").value = item;
-          dropdown.innerHTML = "";
-        };
-        dropdown.appendChild(li);
-      });
-    }
+  const filtered = data.filter(item =>
+    item.toLowerCase().includes(input)
+  );
+
+  filtered.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    li.onclick = () => {
+      window.location.href = pageMap[item.toLowerCase()];
+    };
+
+    dropdown.appendChild(li);
+  });
+}
+
+function goToPage() {
+  const query = document
+    .getElementById("searchInput")
+    .value
+    .trim()
+    .toLowerCase();
+
+  if (pageMap[query]) {
+    window.location.href = pageMap[query];
+  } else {
+    alert("No page found for this search");
+  }
+}
