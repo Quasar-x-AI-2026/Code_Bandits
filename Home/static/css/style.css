@@ -191,7 +191,7 @@ footer a:hover {
 }
 
 .hospital {
-    position: relative;
-    left: 650px;
-    bottom: 100px;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
 }
