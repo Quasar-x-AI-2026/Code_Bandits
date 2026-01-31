@@ -1,8 +1,8 @@
 
 const pageMap = {
-  "hill view hospital": "/static/hospital/hospital.html",
-  "santevita hospital": "/static/hospital/hospital.html",
-  "rajendra institute of medical sciences(rims)": "/static/hospital/hospital.html"
+  "hill view hospital": "/static/hospital/hospitalh.html",
+  "santevita hospital": "/static/hospital/hospitalh.html",
+  "rajendra institute of medical sciences(rims)": "/static/hospital/hospitalh.html"
 };
 
 // Given data
