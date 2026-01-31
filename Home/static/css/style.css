@@ -195,3 +195,11 @@ footer a:hover {
     left: 45%;
     bottom: 3%;
 }
+
+.logo2 {
+    height: 150px;
+    position: absolute;
+    top: 18%;
+    right: 45%;
+    border-radius: 50%;
+}
