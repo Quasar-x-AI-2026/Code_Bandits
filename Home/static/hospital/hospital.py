@@ -68,7 +68,6 @@ if os.path.exists(who_json_path):
     who_docs = load_who_json(who_json_path)
     all_documents.extend(who_docs)
 
-all_documents.extend(who_docs)
 
 
 #chunking
@@ -91,7 +90,7 @@ if os.path.exists(INDEX_PATH):
     vectorstore = FAISS.load_local(
         INDEX_PATH,
         embeddings,
-        allow_dangerous_deserialization=True
+        allow_dangerous_deserialization=False
     )
 else:
     vectorstore = FAISS.from_documents(chunked_documents, embeddings)
@@ -141,9 +140,9 @@ def build_query(user_input, history):
 
 
 def ask_rag(user_input: str,history: list) -> str:
-
-    history.append(HumanMessage(content=user_input))
     query = build_query(user_input,history)
+    history.append(HumanMessage(content=user_input))
+    
     retrieved_docs = retriever.invoke(query)
 
     MAX_CONTEXT_CHARS = 2000
@@ -163,8 +162,8 @@ def ask_rag(user_input: str,history: list) -> str:
             "6. If information is not present in the context, say exactly:\n"
             "'I don't know based on the provided documents.'\n"
             "7. Keep responses calm, supportive, and concise.\n"
-            "9. Answer in 3-4 bullet points only"
-            "10. Each bullet point must be one sentence"
+            "9. Answer in 3-4 bullet points only\n"
+            "10. Each bullet point must be one sentence\n"
             "11. maximum total length: 70-90 words"
             f"Context:\n{context}"
         )
@@ -172,10 +171,10 @@ def ask_rag(user_input: str,history: list) -> str:
 
     messages = [system_message]
     messages.extend(history[-6:])
-    messages.append(HumanMessage(content=user_input))
-
+    
     response = chat.invoke(messages)
 
     history.append(HumanMessage(content=user_input))
     history.append(AIMessage(content=response.content))
                       
+    return response.content
