@@ -1,0 +1,53 @@
+{
+  "schedule_type": "weekly_timetable",
+  "hospital": "Hill View Hospital",
+  "slots": [
+    {
+      "time": "11:00 AM",
+      "monday": [{"name": "Dr. Vijay", "specialty": "Paediatrician"}],
+      "tuesday": [{"name": "Dr. Vijay", "specialty": "Paediatrician"}],
+      "wednesday": [{"name": "Dr. Vijay", "specialty": "Paediatrician"}],
+      "thursday": [{"name": "Dr. Vijay", "specialty": "Paediatrician"}],
+      "friday": [{"name": "Dr. Vijay", "specialty": "Paediatrician"}],
+      "saturday": [{"name": "Dr. Vijay", "specialty": "Paediatrician"}]
+    },
+    {
+      "time": "12:00 PM",
+      "monday": [],
+      "tuesday": [{"name": "Dr. Surya Kr. Besra", "specialty": "Consultant Brain & Spine Surgeon"}],
+      "wednesday": [],
+      "thursday": [{"name": "Dr. Surya Kr. Besra", "specialty": "Consultant Brain & Spine Surgeon"}],
+      "friday": [],
+      "saturday": []
+    },
+    {
+      "time": "1:00 PM",
+      "monday": [
+        {"name": "Dr. Sushma Priya", "specialty": "Gynaecologist"},
+        {"name": "Dr. Nitesh Priya", "specialty": "Orthopedic Surgeon"},
+        {"name": "Dr. Rana Pratap", "specialty": "Consultant Urologist"}
+      ],
+      "tuesday": [
+        {"name": "Dr. Sushma Priya", "specialty": "Gynaecologist"},
+        {"name": "Dr. Nitesh Priya", "specialty": "Orthopedic Surgeon"}
+      ],
+      "wednesday": [
+        {"name": "Dr. Sushma Priya", "specialty": "Gynaecologist"},
+        {"name": "Dr. Nitesh Priya", "specialty": "Orthopedic Surgeon"},
+        {"name": "Dr. Rana Pratap", "specialty": "Consultant Urologist"}
+      ],
+      "thursday": [
+        {"name": "Dr. Sushma Priya", "specialty": "Gynaecologist"},
+        {"name": "Dr. Nitesh Priya", "specialty": "Orthopedic Surgeon"}
+      ],
+      "friday": [
+        {"name": "Dr. Sushma Priya", "specialty": "Gynaecologist"},
+        {"name": "Dr. Nitesh Priya", "specialty": "Orthopedic Surgeon"}
+      ],
+      "saturday": [
+        {"name": "Dr. Sushma Priya", "specialty": "Gynaecologist"},
+        {"name": "Dr. Nitesh Priya", "specialty": "Orthopedic Surgeon"}
+      ]
+    }
+  ]
+}
