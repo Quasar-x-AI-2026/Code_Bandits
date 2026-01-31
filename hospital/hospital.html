@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='hospital.css') }}">
+
+</head>
+<body>
+
+<div class="chat-wrapper">
+
+    <!-- Chat Container (RIGHT) -->
+    <div class="chat-container">
+
+        <div class="header">
+            <h2>JeevanAI</h2>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="input-row">
+            <input id="user-input" type="text" placeholder="Ask a question..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="hospital.js"></script>
+</body>
+</html>
