@@ -7,8 +7,8 @@ body {
 }
 
 .chat-container {
-    position: relative;
-    top: -100px;
+    position: absolute;
+    top: 10%;
     width: 520px;
     margin: 50px auto;
     border: 0px solid #ccc;
@@ -22,6 +22,9 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: absolute;
+    bottom: 100%;
+    right: 45%;
 }
 
 #chat-box {
